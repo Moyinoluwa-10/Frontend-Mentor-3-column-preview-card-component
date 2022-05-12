@@ -89,11 +89,7 @@ a{
 }
 
  /* Responsiveness */
- @media screen and (max-width:375px){
-    
-
-    
-    
+ @media screen and (max-width:500px){
     
     #main{
         flex-direction: column;
@@ -103,16 +99,16 @@ a{
     }
 
     #section1{
-        width: 80%;
+        width: 55%;
         border-radius: 7px 7px 0 0 ;
     }
 
     #section2{
-        width: 80%;
+        width: 55%;
     }
 
     #section3{
-        width: 80%;
+        width: 55%;
         border-radius: 0 0 7px 7px ;
     }
  }
