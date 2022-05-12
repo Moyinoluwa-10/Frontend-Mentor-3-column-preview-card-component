@@ -1,0 +1,119 @@
+:root{
+
+    /* Colors */
+
+    /* Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+}
+
+#main{
+    display: flex;
+    height: 640px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--Very-light-gray);
+}
+
+/* Styling the heading */
+.heading{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+/* Styling the body */
+.body{
+    padding-bottom: 75px;
+    line-height: 25px;
+}
+
+/* Styling Links */
+a{
+    background-color:var(--Transparent-white);
+    border-style: none;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 30px;   
+}
+
+#section1 >a{
+    color: var(--Bright-orange);
+}
+
+#section2 >a{
+    color: var(--Dark-cyan);
+}
+
+#section3 >a{
+    color: var(--Very-dark-cyan);
+}
+
+/* Styling Sections */
+#section1{
+    background-color: var(--Bright-orange);
+    border-style: none;
+    border-radius: 7px 0 0 7px;
+    width: 19%;
+    padding: 40px 0px 50px 40px;
+}
+
+
+#section2{
+    background-color: var(--Dark-cyan);
+    border-style: none;
+    /* border-radius: 7px; */
+    width: 19%;
+    padding: 40px 0px 50px 40px;
+}
+
+#section3{
+    background-color: var(--Very-dark-cyan);
+    border-style: none;
+    border-radius: 0 7px 7px 0;
+    width: 19%;
+    padding: 40px 0px 50px 40px;
+}
+
+ /* Responsiveness */
+ @media screen and (max-width:375px){
+    
+
+    
+    
+    
+    #main{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #section1{
+        width: 80%;
+        border-radius: 7px 7px 0 0 ;
+    }
+
+    #section2{
+        width: 80%;
+    }
+
+    #section3{
+        width: 80%;
+        border-radius: 0 0 7px 7px ;
+    }
+ }
+
