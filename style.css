@@ -58,8 +58,26 @@ a{
     color: var(--Dark-cyan);
 }
 
+#section1 >a:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white);
+    border: 2px solid var(--Transparent-white);
+}
+
+#section2 >a:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white);
+    border: 2px solid var(--Transparent-white);
+}
+
 #section3 >a{
     color: var(--Very-dark-cyan);
+}
+
+#section3 >a:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white);
+    border: 2px solid var(--Transparent-white);
 }
 
 /* Styling Sections */
