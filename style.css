@@ -1,4 +1,4 @@
-:root{
+:root {
 
     /* Colors */
 
@@ -15,34 +15,34 @@
 
 }
 
-#main{
+#main {
     display: flex;
     height: 640px;
     justify-content: center; 
     align-items: center; 
 }
 
-body{
+body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     color: var(--Very-light-gray);
 }
 
 /* Styling the heading */
-.heading{
+.heading {
     font-family: 'Big Shoulders Display', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
 }
 
 /* Styling the body */
-.body{
+.body {
     padding-bottom: 75px;
     line-height: 25px;
 }
 
 /* Styling Links */
-a{
+.section a {
     background-color:var(--Transparent-white);
     border-style: none;
     border-radius: 50px;
@@ -50,38 +50,38 @@ a{
     padding: 10px 30px;   
 }
 
-#section1 >a{
+#section1 > a {
     color: var(--Bright-orange);
 }
 
-#section2 >a{
-    color: var(--Dark-cyan);
-}
-
-#section1 >a:hover{
+#section1 > a:hover {
     background-color: var(--Bright-orange);
     color: var(--Transparent-white);
     border: 2px solid var(--Transparent-white);
 }
 
-#section2 >a:hover{
+#section2 > a {
+    color: var(--Dark-cyan);
+}
+
+#section2 > a:hover {
     background-color: var(--Dark-cyan);
     color: var(--Transparent-white);
     border: 2px solid var(--Transparent-white);
 }
 
-#section3 >a{
+#section3 > a {
     color: var(--Very-dark-cyan);
 }
 
-#section3 >a:hover{
+#section3 > a:hover {
     background-color: var(--Very-dark-cyan);
     color: var(--Transparent-white);
     border: 2px solid var(--Transparent-white);
 }
 
 /* Styling Sections */
-#section1{
+#section1 {
     background-color: var(--Bright-orange);
     border-style: none;
     border-radius: 7px 0 0 7px;
@@ -90,15 +90,14 @@ a{
 }
 
 
-#section2{
+#section2 {
     background-color: var(--Dark-cyan);
     border-style: none;
-    /* border-radius: 7px; */
     width: 19%;
     padding: 40px 0px 50px 40px;
 }
 
-#section3{
+#section3 {
     background-color: var(--Very-dark-cyan);
     border-style: none;
     border-radius: 0 7px 7px 0;
@@ -106,28 +105,131 @@ a{
     padding: 40px 0px 50px 40px;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 80px;
+    color: black;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
  /* Responsiveness */
- @media screen and (max-width:500px){
-    
-    #main{
+ @media screen and (min-width:900px) and (max-width:1200px) {
+    #section1 {
+        width: 25%;
+    }
+
+    #section2 {
+        width: 25%;
+    }
+
+    #section3 {
+        width: 25%;
+    }
+
+}    
+
+@media screen and (min-width:750px) and (max-width:900px) {
+    body {
+        padding: 0 10px;
+    }
+    #section1 {
+        width: 40%;
+        padding-left: 20px;
+    }
+
+    #section2 {
+        width: 40%;
+        padding-left: 20px;
+    }
+
+    #section3 {
+        width: 40%;
+        padding-left: 20px;
+    }
+
+} 
+
+  @media screen and (min-width:500px) and (max-width:770px) {
+    body {
+        margin: 100px auto;
+    }
+
+    #main {
         flex-direction: column;
         height: 100%;
         align-items: center;
         justify-items: center;
     }
 
-    #section1{
-        width: 80%;
+    #section1 {
+        width: 50%;
         border-radius: 7px 7px 0 0 ;
+        padding: 40px 40px 50px 40px;
     }
 
-    #section2{
-        width: 80%;
+    #section2 {
+        width: 50%;
+        padding: 40px 40px 50px 40px;
     }
 
-    #section3{
-        width: 80%;
+    #section3 {
+        width: 50%;
         border-radius: 0 0 7px 7px ;
+        padding: 40px 40px 50px 40px;
     }
+
+    br {
+        display: none;
+    }
+
+    .attribution {  
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
  }
 
+ @media screen and (max-width:500px) {
+    body {
+        margin: 100px auto;
+    }
+
+    #main {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #section1 {
+        width: 62%;
+        border-radius: 7px 7px 0 0 ;
+        padding: 40px 40px 50px 40px;
+    }
+
+    #section2 {
+        width: 62%;
+        padding: 40px 40px 50px 40px;
+    }
+
+    #section3 {
+        width: 62%;
+        border-radius: 0 0 7px 7px ;
+        padding: 40px 40px 50px 40px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .attribution {  
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+ }
