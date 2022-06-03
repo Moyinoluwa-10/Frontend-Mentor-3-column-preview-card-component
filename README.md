@@ -1,1 +1,1 @@
-# Project_2
+# Frontend Mentor | 3-column preview card component solution
